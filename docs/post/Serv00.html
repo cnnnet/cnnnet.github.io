@@ -4,7 +4,7 @@
     <meta content="text/html; charset=utf-8" http-equiv="content-type" />
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link href="//cdn.staticfile.net/Primer/21.0.7/primer.css" rel="stylesheet" />
+    <link href='https://mirrors.sustech.edu.cn/cdnjs/ajax/libs/Primer/21.0.7/primer.css' rel='stylesheet' />
     <link rel="icon" href="https://avatars.githubusercontent.com/u/117225492?v=4&size=64"><script>
         let theme = localStorage.getItem("meek_theme") || "light";
         document.documentElement.setAttribute("data-color-mode", theme);
@@ -215,8 +215,10 @@ body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;
 <div><pre tabindex="0" class="notranslate"><code class="notranslate"><span><span>~/.npm-global/bin/pm2 save
 </span></span></code></pre>复制<div><div></div><div></div><div></div><div>shell</div></div></div><p>这样每次<code class="notranslate">serv00</code>不定时重启任务时，都能自动调用<code class="notranslate">PM2</code>读取保存的任务列表快照，恢复任务列表。如果在保存了任务列表快照后又改变了任务<code class="notranslate">PM2</code>的任务列表，需要重新执行<code class="notranslate">pm2 save</code>以更新任务列表。</p></div></div>
 <div style="font-size:small;margin-top:8px;float:right;"></div>
+
 <button class="btn btn-block" type="button" onclick="openComments()" id="cmButton">评论</button>
 <div class="comments" id="comments"></div>
+
 </div>
     <div id="footer">Copyright © <span id="year"></span><a href="https://cnnnet.github.io"> 转载与纪录 </a>
 <p>
@@ -276,6 +278,8 @@ cmButton=document.getElementById("cmButton");
     span.setAttribute("class","Counter");
     span.innerHTML="1";
     cmButton.appendChild(span);
+
+
 function openComments(){
     cm=document.getElementById("comments");
     cmButton=document.getElementById("cmButton");
