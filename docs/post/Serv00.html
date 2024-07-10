@@ -149,7 +149,7 @@ body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;
 </span></span></code></pre>复制<div><div></div><div></div><div></div><div>shell</div></div></div><p>安装完毕后，使用<code class="notranslate">PM2</code>启动并守护vless进程：</p>
 <div><pre tabindex="0" class="notranslate"><code class="notranslate"><span><span>~/.npm-global/bin/pm2 start app.js --name vless
 </span></span></code></pre>复制<div><div></div><div></div><div></div><div>shell</div></div></div><p>接着去你的代理客户端软件中手动添加vless配置即可：</p>
-<table role="table">
+<markdown-accessiblity-table><table role="table">
 <thead>
 <tr>
 <th>Key</th>
@@ -182,7 +182,7 @@ body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;
 <td>/</td>
 </tr>
 </tbody>
-</table>
+</table></markdown-accessiblity-table>
 <p>也可以复制以下vless节点信息，修改<code class="notranslate">&lt;域名地址&gt;</code>为Panel 中 <code class="notranslate">WWW Websites</code> 选项卡里的你的 <code class="notranslate">Domain name</code>，<code class="notranslate">&lt;端口&gt;</code>为你放行的端口即可</p>
 <div><pre tabindex="0" class="notranslate"><code class="notranslate"><span><span>vless://37a0bd7c-8b9f-4693-8916-bd1e2da0a817@&lt;域名地址&gt;:&lt;端口&gt;?flow<span>=</span>&amp;security<span>=</span>none&amp;encryption<span>=</span>none&amp;type<span>=</span>ws&amp;host<span>=</span>&lt;域名地址&gt;&amp;path<span>=</span>/&amp;sni<span>=</span>&amp;fp<span>=</span>&amp;pbk<span>=</span>&amp;sid<span>=</span><span>#%E4%B8%80%E4%BC%91vless%EF%BC%8CTG%E7%BE%A4%EF%BC%9Ahttps://t.me/yxjsjl</span>
 </span></span></code></pre>复制<div><div></div><div></div><div></div><div>shell</div></div></div><p>上表没有给出的可以不填。</p>
